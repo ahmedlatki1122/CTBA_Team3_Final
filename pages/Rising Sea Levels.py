@@ -10,8 +10,7 @@ register_page(__name__, path='/page2', name = 'Rising Sea Levels')
 #Link for reference to data source: https://tidesandcurrents.noaa.gov/sltrends/sltrends_states.html?gid=1249
 
 ## Load in all of the csv files
-data_path = Path(__file__).resolve().parent.parent / "CTBA_Team3_Final" / "data" / "Yorktown.csv"
-yorktown = pd.read_csv(data_path, header= 4, index_col=False)
+yorktown = pd.read_csv('data/Yorktown.csv', header= 4, index_col=False)
 yorktown.head()
 #rename Month column to yorktown_mean
 yorktown = yorktown.rename(columns={' Monthly_MSL': 'yorktown_mean'})
@@ -25,8 +24,7 @@ yorktown = yorktown[yorktown['Year'] < 2025]
 yorktown.isnull().sum()
 yorktown.head()
 
-data_path1 = Path(__file__).resolve().parent.parent / "CTBA_Team3_Final" / "data" / "Windmill Point.csv"
-WP = pd.read_csv(data_path1, header = 4, index_col=False)
+WP = pd.read_csv('data/Windmill Point.csv', header = 4, index_col=False)
 WP.head()
 #rename Month column to WP_mean
 WP = WP.rename(columns={' Monthly_MSL': 'WP_mean'})
@@ -40,8 +38,7 @@ WP = WP[WP['Year'] < 2025]
 WP.isnull().sum()
 WP.head()
 
-data_path2 = Path(__file__).resolve().parent.parent / "CTBA_Team3_Final" / "data" / "Wachapreague.csv"
-Wachapreague = pd.read_csv(data_path2, header = 4, index_col=False)
+Wachapreague = pd.read_csv('data/Wachapreague.csv', header = 4, index_col=False)
 Wachapreague.head()
 #rename Month column to Wachapreague_mean
 Wachapreague = Wachapreague.rename(columns={' Monthly_MSL': 'Wachapreague_mean'})
@@ -55,8 +52,7 @@ Wachapreague = Wachapreague[Wachapreague['Year'] < 2025]
 Wachapreague.isnull().sum()
 Wachapreague.head()
 
-data_path3 = Path(__file__).resolve().parent.parent / "CTBA_Team3_Final" / "data" / "Sewells Point.csv"
-SewellsPoint = pd.read_csv(data_path3, header = 4, index_col=False)
+SewellsPoint = pd.read_csv('data/Sewells Point.csv', header = 4, index_col=False)
 SewellsPoint.head()
 #rename Month column to SewellsPoint_mean
 SewellsPoint = SewellsPoint.rename(columns={' Monthly_MSL': 'SewellsPoint_mean'})
@@ -70,8 +66,7 @@ SewellsPoint = SewellsPoint[SewellsPoint['Year'] < 2025]
 SewellsPoint.isnull().sum()
 SewellsPoint.head()
 
-data_path4 = Path(__file__).resolve().parent.parent / "CTBA_Team3_Final" / "data" / "Lewisetta.csv"
-Lewisetta = pd.read_csv(data_path4, header = 4, index_col=False)
+Lewisetta = pd.read_csv('data/Lewisetta.csv', header = 4, index_col=False)
 Lewisetta.head()
 #rename Month column to Lewisetta_mean
 Lewisetta = Lewisetta.rename(columns={' Monthly_MSL': 'Lewisetta_mean'})
@@ -85,8 +80,7 @@ Lewisetta = Lewisetta[Lewisetta['Year'] < 2025]
 Lewisetta.isnull().sum()
 Lewisetta.head()
 
-data_path5 = Path(__file__).resolve().parent.parent / "CTBA_Team3_Final" / "data" / "Kiptopeke.csv"
-Kiptopeke = pd.read_csv(data_path5, header = 4, index_col=False)
+Kiptopeke = pd.read_csv('data/Kiptopeke.csv', header = 4, index_col=False)
 Kiptopeke.head()
 #rename Month column to Kiptopeke_mean
 Kiptopeke = Kiptopeke.rename(columns={' Monthly_MSL': 'Kiptopeke_mean'})
@@ -100,8 +94,7 @@ Kiptopeke = Kiptopeke[Kiptopeke['Year'] < 2025]
 Kiptopeke.isnull().sum()
 Kiptopeke.head()
 
-data_path6 = Path(__file__).resolve().parent.parent / "CTBA_Team3_Final" / "data" / "Dahlgren.csv"
-Dahlgren = pd.read_csv(data_path6, header = 4, index_col=False)
+Dahlgren = pd.read_csv('data/Dahlgren.csv', header = 4, index_col=False)
 Dahlgren.head()
 #rename Month column to Dahlgren_mean
 Dahlgren = Dahlgren.rename(columns={' Monthly_MSL': 'Dahlgren_mean'})
