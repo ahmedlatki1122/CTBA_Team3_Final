@@ -7,3 +7,4 @@ gunicorn
 datetime
 pathlib
 dash-bootstrap-components==1.5.0
+requests==2.31.0
